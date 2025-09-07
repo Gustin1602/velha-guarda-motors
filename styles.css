@@ -1,0 +1,114 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #ffffff;
+  color: #000000;
+  transition: background 0.3s, color 0.3s;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(90deg, #ff0000, #ff6600);
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+header p {
+  font-size: 1.2em;
+}
+
+#acessibilidade {
+  margin-top: 15px;
+}
+
+.btn {
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1em;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #ff3300;
+}
+
+.carros-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.carro-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s, background 0.3s, border 0.3s;
+  border: 2px solid #ddd;
+}
+
+.carro-card:hover {
+  transform: scale(1.05);
+}
+
+.carro-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.carro-card h2 {
+  margin: 10px 0;
+  color: #ff6600;
+}
+
+.carro-card button {
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1em;
+  transition: background 0.3s;
+}
+
+.carro-card button:hover {
+  background-color: #ff3300;
+}
+
+/* 🌙 MODO ESCURO */
+body.dark-mode {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+body.dark-mode .carro-card {
+  background-color: #222;
+  border: 2px solid #444;
+}
+
+body.dark-mode header {
+  background: linear-gradient(90deg, #660000, #cc3300);
+}
+
+body.dark-mode .btn {
+  background-color: #444;
+  color: #fff;
+}
+
+body.dark-mode .btn:hover {
+  background-color: #666;
+}
